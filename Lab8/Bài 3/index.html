@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 3 - Lab 8</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+
+        }
+        .player-container {
+            background-color: black;
+            padding: 10px;
+        
+        }
+    </style>
+</head>
+<body>
+    <div class="container">             
+        <h1>Custom HTML5 Video Player</h1>
+        <div class="player-container">
+            <video id="myplayer" width="640" height="360">
+                <source src="10-SECOND.mp4" type="video/mp4">
+                Your browser does not support HTML5 Video.
+            </video>
+            <div class="controls">
+                <button onclick="playePause()">Phay/Pause</button>
+                <button onclick="stopVideo()">Stop</button>
+                <button onclick="replayVideo()">Replay</button>
+                <button onclick="increaseVolume()">Volume (+)</button>
+                <button onclick="decreaseVolume()">Volume (-)</button>
+                <button onclick="muteVolume()">Mute/Unmute</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

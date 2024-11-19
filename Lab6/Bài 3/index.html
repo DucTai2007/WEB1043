@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="anh" src="https://i.pinimg.com/564x/f2/81/f1/f281f146c4866392194a27bd7848edae.jpg" alt="">
+    <hr>
+    <button onclick="first()">First</button>
+    <button onclick="next()">Next</button>
+    <button onclick="prev()">Prev</button>
+    <button onclick="last()">Last</button>
+    <script>
+        const imgs = [
+            "https://i.pinimg.com/736x/83/ab/b2/83abb2e922103d26fdb8f82e53095ccb.jpg",
+            "https://i.pinimg.com/564x/a5/59/e3/a559e3e59fd9a38d909f5e016050e229.jpg",
+            "https://i.pinimg.com/736x/eb/ec/fc/ebecfc48db98cc3da83e6b8c9b096b0f.jpg",
+            "https://i.pinimg.com/564x/b1/e7/90/b1e79090a5095f66834488313f5cb798.jpg",
+            "https://i.pinimg.com/564x/15/1a/62/151a62ac3249409182133732b7da76ab.jpg"
+        ]
+
+        const imgEle = document.getElementById('anh');
+        let index = 0;
+
+        function first() {
+            index = 0;
+            imgEle.src = imgs[index];
+        }
+
+        function last() {
+            index = imgs.length - 1
+            imgEle.src = imgs[index];
+        }
+
+        function prev() {
+            index--;
+            if(index < 0) {
+                index = imgs.length - 1;
+            }
+            imgEle.src = imgs[index];
+        }
+
+        function next() {
+            index++;
+            if(index >= imgs.length) {
+                index = 0;
+            }
+            imgEle.src =  imgs[index];
+        }
+    </script>
+</body>
+</html>

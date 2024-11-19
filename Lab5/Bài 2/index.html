@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Danh mục hàng hoá</h3>
+    <table border="1">
+        <tr>
+            <td>IPhone 9</td>
+            <td>$2700</td>
+            <td><button onclick="them(this)">Thêm</button></td>
+        </tr>
+        <tr>
+            <td>Samsung Star</td>
+            <td>$1500</td>
+            <td><button onclick="them(this)">Thêm</button></td>
+        </tr>
+        <tr>
+            <td>Nokia 2019</td>
+            <td>$1200</td>
+            <td><button onclick="them(this)">Thêm</button></td>
+        </tr>
+        <tr>
+            <td>Sony Xperiac</td>
+            <td>$1700</td>
+            <td><button onclick="them(this)">Thêm</button></td>
+        </tr>
+    </table>
+
+    <h3>Giỏ hàng của bạn</h3>
+    <div id="not-empty">
+        <table border="1" id="cart"></table>
+
+        <h3>Tổng số tiền: $<span id="tong">0</span></h3>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

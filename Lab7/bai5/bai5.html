@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ĐẶT HÀNG</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        form{
+            text-align: center;
+        }
+        hr {
+            width: 20%;
+            text-align: left;
+        }
+        .phi-vc {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>ĐẶT HÀNG</h1>
+    <form onsubmit="return kiem_tra()">
+        <label for="SanP">Sản Phẩm</label>
+        <input type="text" id="san_pham" name="SanP"><br><br>
+
+        <label for="Loai">Loại</label>
+        <input list="Loai" id="loai">
+        <datalist id="Loai">
+            <option value="Sản phẩm 1">
+            <option value="Sản phẩm 2">
+            <option value="Sản phẩm 3">
+            <option value="Sản phẩm 4">
+        </datalist> <br> <br>
+
+        <label for="Gia">Đơn giá</label>
+        <input type="number" id="don_gia"><br><br>
+
+        <legend>Nơi nhận hàng:</legend>
+        <label><input type="radio" name="dia_chi" onclick="hien_thi(false)"> Nội Thành</label>
+        <label><input type="radio" name="dia_chi" onclick="hien_thi(true)"> Ngoại thành</label><br><br>
+        <div id="phi_vc" class="phi-vc">
+            <label for="PhiVC">Phí vận chuyển</label>
+            <input type="number" id="phi_vc_input"><br><br>
+        </div>
+        <hr>
+        <input type="submit" value="Đặt hàng">
+    </form>
+    <script src="bai5.js"></script>
+</body>
+</html>

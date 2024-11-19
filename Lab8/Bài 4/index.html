@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 4 - Lab 8</title>
+    <style>
+
+        .countdown {
+            margin-top: 10px;
+            display: flex;
+        }
+
+        .time-box {
+            display: flex;
+            background-color: #000;
+            color: #fff;
+            padding: 5px 10px;
+            margin: 0 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <input type="date" id="dateInput">
+    <button onclick="saveSaleTime()">Áp dụng</button>
+    <div class="countdown">
+        <div class="time-box">
+            <span id="days" class="numbers"></span>
+            <div class="label">  Ngày</div>
+        </div>
+
+        <div class="time-box">
+            <span id="hours" class="numbers"></span>
+            <div class="label"> Giờ</div>
+        </div>
+
+        <div class="time-box">
+            <span id="minutes" class="numbers"></span>
+            <div class="label"> Phút</div>
+        </div>
+
+        <div class="time-box">
+            <span id="seconds" class="numbers"></span>
+            <div class="label"> Giây</div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

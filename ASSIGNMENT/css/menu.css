@@ -1,0 +1,56 @@
+.pMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 40px;
+}
+
+.logo {
+  width: 40px;
+  padding: 10px;
+}
+.logo center>i {
+    padding: 10px;
+}
+
+.menuTop>b {
+  list-style: none;
+  display: flex;
+}
+
+.menu li {
+  padding: 10px;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: red;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all 0.2s ease-in-out;
+}
+
+.DangNhapGioHangTongSL {
+  display: flex;
+  padding: 20px;
+  padding-right: 30px;
+}
+
+.TongSL {
+  font-size: small;
+}
+
+.menuTop > li {
+  position: relative;
+}
+
+.menuTop > li:hover .subMenu2 {
+  display: flex;
+}
+  
